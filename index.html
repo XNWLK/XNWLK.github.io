@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xn's Warlock Projects</title>
+<meta name="description" content="Warlock tools, games and addons for WoW: Forever by Xn - DPS sim, pre-raid BiS, 3D practice sim, arcade and addons.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root {
+  --bg: #0b0a0e;
+  --frame: #1a161d;
+  --frame-2: #231d27;
+  --line: #3a2f2a;
+  --gold: #e3bf6a;
+  --gold-dim: #9c8556;
+  --text: #ece6da;
+  --muted: #a39a8c;
+  --fel: #9d84f0;
+  --display: "Cinzel", "Trajan Pro", Georgia, serif;
+  --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+html { color-scheme: dark; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 var(--body);
+  background-image: radial-gradient(1200px 500px at 50% -10%, #241a2e 0%, transparent 70%); background-repeat: no-repeat; }
+main { max-width: 980px; margin: 0 auto; padding: 56px 16px 40px; }
+header { text-align: center; margin-bottom: 40px; }
+.eyebrow { font: 600 11px var(--body); letter-spacing: .14em; text-transform: uppercase; color: var(--gold-dim); }
+h1 { font: 700 clamp(28px, 5vw, 44px)/1.1 var(--display); color: var(--gold); margin: 8px 0 10px; text-wrap: balance; }
+header p { margin: 0 auto; max-width: 52ch; color: var(--muted); text-wrap: pretty; }
+h2 { font: 600 11px var(--body); letter-spacing: .14em; text-transform: uppercase; color: var(--gold-dim);
+  margin: 34px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr)); gap: 12px; list-style: none; margin: 0; padding: 0; }
+.card { position: relative; display: flex; flex-direction: column; gap: 6px; height: 100%; padding: 18px;
+  border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 10px;
+  background: linear-gradient(180deg, var(--frame-2), var(--frame) 40%), var(--frame); }
+.card h3 { font: 700 19px/1.2 var(--display); margin: 0; }
+.card h3 a { color: var(--text); text-decoration: none; }
+.card h3 a::after { content: ""; position: absolute; inset: 0; border-radius: 10px; }
+.card p { margin: 0; color: var(--muted); font-size: 14px; flex: 1; }
+.where { font: 600 12px var(--body); color: var(--fel); margin-top: 6px; }
+.where::after { content: " \2192"; }
+.card:hover, .card:focus-within { border-color: var(--gold); }
+.card:hover h3 a, .card:focus-within h3 a { color: var(--gold); }
+.card h3 a:focus-visible { outline: none; }
+.card:focus-within:has(a:focus-visible) { outline: 2px solid var(--gold); outline-offset: 2px; }
+.src { position: relative; z-index: 1; align-self: flex-start; font-size: 12px; color: var(--gold-dim); }
+.src:hover { color: var(--gold); }
+footer { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--line); text-align: center; color: var(--muted); font-size: 13px; }
+footer a { color: var(--gold-dim); }
+footer a:hover { color: var(--gold); }
+@media (prefers-reduced-motion: no-preference) { .card, .card h3 a { transition: border-color .12s, color .12s; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="eyebrow">WoW: Forever</div>
+    <h1>Xn's Warlock Projects</h1>
+    <p>Tools, games and addons for Warlocks in WoW: Forever.</p>
+  </header>
+
+  <h2>In the browser</h2>
+  <ul class="grid">
+    <li><div class="card">
+      <h3><a href="https://xnwlk.github.io/WarlockSIM/">Warlock Sim</a></h3>
+      <p>DPS simulator for Warlocks: pick talents, gear and rotation, and compare the results.</p>
+      <span class="where">Open the sim</span>
+      <a class="src" href="https://github.com/XNWLK/WarlockSIM">Source</a>
+    </div></li>
+    <li><div class="card">
+      <h3><a href="https://xnwlk.github.io/BIS/">Pre-Raid BiS</a></h3>
+      <p>Best-in-slot gear lists for each Warlock build before the first raid.</p>
+      <span class="where">Open the lists</span>
+      <a class="src" href="https://github.com/XNWLK/BIS">Source</a>
+    </div></li>
+    <li><div class="card">
+      <h3><a href="https://xnwlk.github.io/ForeverWarlocking/">Forever Warlocking</a></h3>
+      <p>3D version of the Warlock Sim: practice your rotation on a target instead of reading numbers.</p>
+      <span class="where">Start practicing</span>
+      <a class="src" href="https://github.com/XNWLK/ForeverWarlocking">Source</a>
+    </div></li>
+    <li><div class="card">
+      <h3><a href="https://xnwlk.github.io/ForeverWarlockArcade/">Warlock Arcade</a></h3>
+      <p>Little Warlock games, playable in the browser and in-game as an addon.</p>
+      <span class="where">Play</span>
+      <a class="src" href="https://github.com/XNWLK/ForeverWarlockArcade">Source</a>
+    </div></li>
+  </ul>
+
+  <h2>Addons</h2>
+  <ul class="grid">
+    <li><div class="card">
+      <h3><a href="https://www.curseforge.com/wow/addons/xns-warlock-sim">Warlock Sim Addon</a></h3>
+      <p>The Warlock Sim in-game: reads your character and sims it on the spot.</p>
+      <span class="where">CurseForge</span>
+      <a class="src" href="https://github.com/XNWLK/WarlockSIMAddon">Source</a>
+    </div></li>
+    <li><div class="card">
+      <h3><a href="https://www.curseforge.com/wow/addons/xndr">XNDR</a></h3>
+      <p>Diminishing returns of your own crowd control - Fear, Seduction, Death Coil, Banish and engineering stuns - next to the target and focus portraits.</p>
+      <span class="where">CurseForge</span>
+      <a class="src" href="https://github.com/XNWLK/XNDR">Source</a>
+    </div></li>
+    <li><div class="card">
+      <h3><a href="https://www.curseforge.com/wow/addons/xnshards">XNShards</a></h3>
+      <p>Keeps the Soul Shards you want and destroys the rest, on your next key press or with /shards.</p>
+      <span class="where">CurseForge</span>
+      <a class="src" href="https://github.com/XNWLK/XNShards">Source</a>
+    </div></li>
+    <li><div class="card">
+      <h3><a href="https://github.com/XNWLK/XNRT/releases/latest">XNRT</a></h3>
+      <p>Raid leading: rosters and sorted raid groups, assignments the whole raid sees, and raid logs with boss kills, loot and attendance.</p>
+      <span class="where">Download on GitHub</span>
+      <a class="src" href="https://github.com/XNWLK/XNRT">Source</a>
+    </div></li>
+  </ul>
+
+  <footer>
+    Made by Xn &middot; <a href="https://github.com/XNWLK">github.com/XNWLK</a>
+  </footer>
+</main>
+</body>
+</html>
